@@ -6,6 +6,7 @@ import { ScoreCard } from './components/ScoreCard'
 import type { IReview } from './types'
 import './App.css'
 
+
 function App() {
   const [code, setCode] = useState('')
   const [language, setLanguage] = useState('javascript')
@@ -73,9 +74,6 @@ function App() {
       <div className="container mx-auto px-4 py-8 max-w-7xl">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold mb-4">
-            Powered by Google Gemini AI
-          </div>
           <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-3">
             🔍 Smart Code Reviewer
           </h1>
@@ -115,6 +113,8 @@ function App() {
                 <option value="java">Java</option>
                 <option value="go">Go</option>
                 <option value="rust">Rust</option>
+                <option value="php">PHP</option>
+                <option value="ruby">Ruby</option>
               </select>
 
               <button
